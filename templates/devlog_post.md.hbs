@@ -1,0 +1,49 @@
+---
+title: "MindsEye Devlog — {{period}}"
+published: false
+tags: [mindseye, google, ai, devlog]
+---
+
+# MindsEye Devlog — {{period}}
+
+{{#if summary}}
+{{summary}}
+
+---
+
+{{/if}}
+
+**Period:** {{period}}  
+**Total runs:** {{totalRuns}}  
+**Active nodes:** {{totalNodes}}
+
+---
+
+## 🧠 Highlights by Node
+
+{{#if entries}}
+{{#each entries}}
+
+### {{title}} <small>({{node_id}})</small>
+
+- **Prompt type:** `{{prompt_type}}`
+- **Runs:** {{run_count}}
+- **Contexts:** {{#each contexts}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
+- **First run:** {{first_run_time}}
+- **Last run:** {{last_run_time}}
+
+{{#if sample_outputs}}
+**Sample outputs / notes:**
+
+{{#each sample_outputs}}
+> {{this}}
+
+{{/each}}
+{{/if}}
+
+---
+
+{{/each}}
+{{else}}
+No runs were recorded in this period.
+{{/if}}
