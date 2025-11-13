@@ -1,0 +1,35 @@
+{
+  "name": "mindseye-google-devlog",
+  "version": "0.1.0",
+  "description": "Generate Dev.to-style markdown posts from the MindsEye Google ledger (nodes + runs) with optional Gemini assistance.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx ts-node src/index.ts",
+    "dev:window7": "npx ts-node src/index.ts --window 7",
+    "lint": "echo \"no lint configured yet\""
+  },
+  "keywords": [
+    "mindseye",
+    "devlog",
+    "google-sheets-api",
+    "gemini",
+    "google-ai",
+    "devto",
+    "markdown"
+  ],
+  "author": "Peace Thabiwa",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0",
+    "googleapis": "^127.0.0",
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/handlebars": "^4.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}
