@@ -1,0 +1,11 @@
+{
+  "GOOGLE_PROJECT_ID": "your-google-cloud-project-id",
+  "GOOGLE_CLIENT_EMAIL": "service-account@your-project.iam.gserviceaccount.com",
+  "GOOGLE_PRIVATE_KEY": "-----BEGIN PRIVATE KEY-----\\nYOUR_KEY_HERE\\n-----END PRIVATE KEY-----\\n",
+  "LEDGER_SHEET_ID": "your-ledger-sheet-id",
+  "LEDGER_NODES_RANGE": "nodes!A:I",
+  "LEDGER_RUNS_RANGE": "runs!A:I",
+  "GEMINI_API_KEY": "your-gemini-api-key-or-empty",
+  "GEMINI_MODEL_ID": "gemini-1.5-pro",
+  "OUTPUT_DIR": "devlogs"
+}
